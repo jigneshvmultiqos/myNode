@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const port = process.env.API_PORT;
 
 app.get('/', (req, res) => {
-    res.status(200).send("Testing route")
+    res.status(200).send("My Node route")
 })
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)

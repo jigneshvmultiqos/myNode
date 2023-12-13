@@ -1,0 +1,40 @@
+{
+  "name": "mynode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js",
+    "seeder": "nodemon src/seeder.js",
+    "test": "nodemon src/helpers/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "axios": "^1.6.2",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "faker": "^6.6.6",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "joi": "^17.11.0",
+    "joi-objectid": "^4.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.29.4",
+    "mongoose": "^8.0.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.7",
+    "nodemon": "^3.0.2",
+    "pagination-express": "^2.0.7",
+    "path": "^0.12.7",
+    "playwright": "^1.40.1"
+  }
+}

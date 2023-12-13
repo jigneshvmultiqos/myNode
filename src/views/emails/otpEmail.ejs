@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY NODE OTP</title>
+    <style>
+        body {
+            position: relative;
+            font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #000000;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <table bgcolor="#ffffff" align="center" width="600" style="box-shadow: 0px -7px 30px rgba(0, 0, 0, 0.1);" border="0"
+        cellspacing="0" cellpadding="0">
+        <tr>
+            <th width="20" colspan="3">
+                <img src="http://localhost:3000/public/uploads/logo/betappvisor-banner.jpg" width="600" height="224"
+                    alt="<%= locals.siteName %>" style="display:block;">
+                <!-- <a href="https://betappvisor.com/"><img src="https://betappvisor.com:3000/public/uploads/logo/betappvisor-banner.jpg" width="600" height="224" alt="betappvisor-banner" border="0"></a> -->
+            </th>
+        </tr>
+        <tr>
+            <td width="20"></td>
+            <td height="40"></td>
+            <td width="20"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td align="center">
+                <h1
+                    style="font-family:'Tahoma', Geneva, Verdana, sans-serif; font-size:24px; line-height:1.4;margin: 0;">
+                    OTP Verification Code</h1>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <p style="font-size:20px;line-height:1;margin: 0;">&nbsp;</p>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td align="center">
+                <p style="font-size:16px;line-height:2;margin: 0;">Dear <%= locals.username %>,</p>
+                <p style="font-size:16px;line-height:2;margin: 0;">Thank you for choosing <%= locals.siteName %>.</p>
+                <p style="font-size:16px;line-height:2;margin: 0;">Please find below your one-time password (OTP) for
+                    verification:</p>
+                <p style="font-size: 24px;line-height:2;margin: 0;color: #7ecada;font-weight: bold;text-align: center;">
+                    Your OTP is:</p>
+                <p style="font-size:10px;line-height:1;margin: 0;">&nbsp;</p>
+                <p style="text-align: center;margin: 0;"><span
+                        style=" font-size:16px;border: 1px solid #183041; padding:10px 20px; display: inline-block; background-color: #183041; color: #ffffff;line-height:1;">
+                        <%= locals.token %>
+                    </span></p>
+                <p style="font-size:20px;line-height:1;margin: 0;">&nbsp;</p>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <p style="font-size:14px;line-height:1.4;margin: 0;opacity:0.6;text-align: center;">Please note that
+                    this OTP is valid for only 1 minute.</p>
+                <p style="font-size:14px;line-height:1.4;margin: 0;opacity:0.6;text-align: center;">Do not share this
+                    OTP with anyone.</p>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td width="20"></td>
+            <td height="30"></td>
+            <td width="20"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

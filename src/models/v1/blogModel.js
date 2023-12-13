@@ -20,7 +20,11 @@ const schema = new mongoose.Schema(
 			ref : "category",
 			index: true
         },
-
+        userID:{
+            type: mongoose.Schema.Types.ObjectId,
+            ref : "user",
+            index: true
+        },
         status: {
             type: Number,
             default: 1,
